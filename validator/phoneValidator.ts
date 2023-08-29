@@ -15,8 +15,8 @@ export function validateBelPhoneNumber(
       }),
       O.fromPredicate(
         ({ length, operatorCode }) =>
-          (length === 9 && /^(29|33|44)/.test(operatorCode.slice(0, 2))) ||
-          (length === 12 && /^(37529|37533|37544)/.test(operatorCode)),
+          (length === 9 && /^(29|33|44|25)/.test(operatorCode.slice(0, 2))) ||
+          (length === 12 && /^(37529|37533|37544|37525)/.test(operatorCode)),
       ),
       O.map(({ cleanedNumber }) =>
         cleanedNumber.length === 9
