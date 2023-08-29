@@ -25,7 +25,7 @@ import * as E from 'fp-ts/Either';
   });
 
   it('should return an error when the phone number has incorrect length', () => {
-    const result = validateBelPhoneNumber('29999999'); // 8 digits instead of 9 or 12
+    const result = validateBelPhoneNumber('29999999');
     expect(E.isLeft(result)).toBe(true);
     expect(result).toEqual(
       E.left({
