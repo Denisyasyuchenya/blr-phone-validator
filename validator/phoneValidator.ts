@@ -2,7 +2,7 @@ import { pipe } from 'fp-ts/function';
 import * as O from 'fp-ts/Option';
 import * as E from 'fp-ts/Either';
 
-function validateBelPhoneNumber(
+export function validateBelPhoneNumber(
     phoneNumber: string,
   ): E.Either<{ type: 'phoneValidationError'; err: string }, string> {
     return pipe(
