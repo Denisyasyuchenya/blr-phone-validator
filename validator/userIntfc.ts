@@ -1,5 +1,8 @@
 import * as readline from 'readline';
 import { validateBelPhoneNumber } from './phoneValidator'
+import { printBanner } from './printBanner';
+
+printBanner();
 
 const rl = readline.createInterface({
   input: process.stdin,

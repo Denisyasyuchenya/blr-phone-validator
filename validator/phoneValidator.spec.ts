@@ -1,5 +1,8 @@
 import { validateBelPhoneNumber } from './phoneValidator';
 import * as E from 'fp-ts/Either';
+import { printTestBanner } from './printBanner';
+
+printTestBanner();
 
   it('should return a valid phone number when input is correct (9 digits)', () => {
     const result = validateBelPhoneNumber('299999999');
